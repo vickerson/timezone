@@ -1,1 +1,1 @@
-print("es besamt xelaci em ")
+print("es debil em ")
