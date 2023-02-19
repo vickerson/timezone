@@ -1,5 +1,3 @@
-import datetime
-from datetime import date
-print(date.fromisoformat('2019-12-04'))
-print(datetime.timezone(datetime.timedelta(hours=4)))
-print(datetime.date.today())
+from utils import get_country_timezone, get_current_timezone
+
+print(get_current_timezone())
