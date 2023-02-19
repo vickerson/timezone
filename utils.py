@@ -2,9 +2,8 @@
 import requests
 #էս տոկենը ավտորիզացիայի համարա , առանց սրա API ն չի աշխատի , պատկերացրու cookie ա
 TOKEN = "aWkfCnsTVzEUmslvCmFn"
-region = 'Europe'
 #Հլը որ մենակ Եվրոպական երկրների համարա աշխատում
-def get_country_timezone(country: str) -> str:
+def get_country_timezone(region: str,country: str) -> str:
     path = f'https://timezoneapi.io/api/timezone/?{region}/{country}&token={TOKEN}'
     response = requests.get(path)
     data = response.json()
