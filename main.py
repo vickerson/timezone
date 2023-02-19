@@ -1,8 +1,6 @@
 from utils import get_country_timezone, get_current_timezone
 from functions import tiemezone_difference
 
-#You can check an example of output 
-#print(get_country_timezone("Paris"))
 #country A
 A = input("Country A:")
 #country B

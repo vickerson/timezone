@@ -9,7 +9,7 @@ def get_country_timezone(region: str,country: str) -> str:
     data = response.json()
     if data['meta']['code'] == "200":
         location = data['data']['timezone']['location']
-        time = data['data']['datetime']['date_time_txt']
+        time = data['data']['datetime']['date_time']
         return time
     else:
         return data['meta']['message']
@@ -19,7 +19,7 @@ def get_current_timezone():
     data = response.json()
     if data['meta']['code'] == "200":
         location = data['data']['timezone']['location']
-        time = data['data']['datetime']['date_time_txt']
+        time = data['data']['datetime']['date_time']
         return time
     else:
         return data['meta']['message']
